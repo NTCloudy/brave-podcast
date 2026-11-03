@@ -12,6 +12,135 @@
     <itunes:category text="Fiction"><itunes:category text="Comedy Fiction"/></itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>serial</itunes:type>
-
+    <item>
+      <title>前世勇者｜第一章　蕾娜，別哭</title>
+      <description>《學生會長是前世的勇者》第一集　第一章　蕾娜，別哭。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e001.mp3" length="10491885" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e001.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:01:00 +0800</pubDate>
+      <itunes:duration>1311</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第二章　你也記得？</title>
+      <description>《學生會長是前世的勇者》第一集　第二章　你也記得？。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e002.mp3" length="9554157" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e002.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:02:00 +0800</pubDate>
+      <itunes:duration>1194</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第三章　以魔王之名</title>
+      <description>《學生會長是前世的勇者》第一集　第三章　以魔王之名。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e003.mp3" length="10842669" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e003.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:03:00 +0800</pubDate>
+      <itunes:duration>1355</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第四章　魔王學弟與影印機</title>
+      <description>《學生會長是前世的勇者》第一集　第四章　魔王學弟與影印機。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e004.mp3" length="11409837" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e004.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:04:00 +0800</pubDate>
+      <itunes:duration>1426</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第五章　最後一個菠蘿麵包</title>
+      <description>《學生會長是前世的勇者》第一集　第五章　最後一個菠蘿麵包。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e005.mp3" length="9332013" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e005.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:05:00 +0800</pubDate>
+      <itunes:duration>1166</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第六章　五十九分與一把黑傘</title>
+      <description>《學生會長是前世的勇者》第一集　第六章　五十九分與一把黑傘。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e006.mp3" length="10918893" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e006.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:06:00 +0800</pubDate>
+      <itunes:duration>1364</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第七章　關燈之後</title>
+      <description>《學生會長是前世的勇者》第一集　第七章　關燈之後。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e007.mp3" length="10858989" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e007.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:07:00 +0800</pubDate>
+      <itunes:duration>1357</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第八章　星星形狀的餅乾</title>
+      <description>《學生會長是前世的勇者》第一集　第八章　星星形狀的餅乾。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e008.mp3" length="9843501" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e008.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:08:00 +0800</pubDate>
+      <itunes:duration>1230</itunes:duration>
+      <itunes:episode>8</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第九章　白檀香</title>
+      <description>《學生會長是前世的勇者》第一集　第九章　白檀香。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e009.mp3" length="11532141" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e009.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:09:00 +0800</pubDate>
+      <itunes:duration>1441</itunes:duration>
+      <itunes:episode>9</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
+    <item>
+      <title>前世勇者｜第十章　左腳多踩的那一步</title>
+      <description>《學生會長是前世的勇者》第一集　第十章　左腳多踩的那一步。</description>
+      <enclosure url="https://ntcloudy.github.io/brave-podcast/audio/e010.mp3" length="11099949" type="audio/mpeg"/>
+      <guid isPermaLink="false">brave-e010.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 12:10:00 +0800</pubDate>
+      <itunes:duration>1387</itunes:duration>
+      <itunes:episode>10</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    </item>
   </channel>
 </rss>
