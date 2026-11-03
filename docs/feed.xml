@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>學生會長是前世的勇者｜有聲書</title>
+    <link>https://ntcloudy.github.io/brave-podcast/</link>
+    <atom:link href="https://ntcloudy.github.io/brave-podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>zh-tw</language>
+    <description>《學生會長是前世的勇者》有聲書。開學典禮上，我打瞌睡說了一句夢話——「蕾娜，別哭。」台上的學生會長，講稿從手上滑了下去。前世，她是斬殺魔王的勇者；今生，她是全校第一的學生會長，而我是她的雜務組。完美學生會長 × 嘴毒魔王雜務組，雙視角輪流登場的死對頭校園戀愛喜劇。</description>
+    <itunes:author>NTCloudy</itunes:author>
+    <itunes:owner><itunes:name>NTCloudy</itunes:name><itunes:email>robinhood126936@gmail.com</itunes:email></itunes:owner>
+    <itunes:image href="https://ntcloudy.github.io/brave-podcast/img/cover.jpg"/>
+    <itunes:category text="Fiction"><itunes:category text="Comedy Fiction"/></itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>serial</itunes:type>
+
+  </channel>
+</rss>
