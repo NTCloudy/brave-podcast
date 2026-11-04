@@ -9,7 +9,7 @@ flock -n 9 || exit 0
 {
   echo "=== $(date '+%F %T')"
   git pull -q --rebase || true
-  python3 -u tools/batch.py && python3 tools/build_feed.py
+  python3 -u tools/batch.py; python3 -u tools/upload.py && python3 tools/build_feed.py
   if [ -n "$(git status --porcelain)" ]; then
     git add -A && git commit -qm "有聲書自動更新 $(date '+%F %H:%M')" && git push -q && echo pushed
   fi

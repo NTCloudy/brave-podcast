@@ -5,13 +5,16 @@ from email.utils import format_datetime
 BASE = "https://ntcloudy.github.io/brave-podcast"
 EMAIL = os.environ.get("PODCAST_EMAIL", "robinhood126936@gmail.com")
 eps = json.load(open("episodes.json", encoding="utf-8"))
+# MP3s live on the GitHub Release "audio" (Pages has a 1 GB limit); list only episodes already uploaded.
+AUDIO = "https://github.com/NTCloudy/brave-podcast/releases/download/audio"
+UPLOADED = json.load(open("uploaded.json", encoding="utf-8")) if os.path.exists("uploaded.json") else {}
 desc = ("《學生會長是前世的勇者》有聲書。開學典禮上，我打瞌睡說了一句夢話——「蕾娜，別哭。」台上的學生會長，講稿從手上滑了下去。"
         "前世，她是斬殺魔王的勇者；今生，她是全校第一的學生會長，而我是她的雜務組。"
         "完美學生會長 × 嘴毒魔王雜務組，雙視角輪流登場的死對頭校園戀愛喜劇。")
 items = []
 for e in eps:
     f = f"docs/audio/{e['file']}"
-    if not os.path.exists(f): continue
+    if not os.path.exists(f) or UPLOADED.get(e['file']) != os.path.getmtime(f): continue
     size = os.path.getsize(f)
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f],
                                capture_output=True, text=True).stdout.strip()
@@ -22,7 +25,7 @@ for e in eps:
     items.append(f"""    <item>
       <title>{html.escape(e['title'])}</title>
       <description>{html.escape(e.get('summary', e['title']))}</description>
-      <enclosure url="{BASE}/audio/{e['file']}" length="{size}" type="audio/mpeg"/>
+      <enclosure url="{AUDIO}/{e['file']}" length="{size}" type="audio/mpeg"/>
       <guid isPermaLink="false">brave-{e['file']}</guid>
       <pubDate>{e['pub']}</pubDate>
       <itunes:duration>{int(dur)}</itunes:duration>
@@ -51,7 +54,7 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 </rss>
 """
 open("docs/feed.xml", "w", encoding="utf-8").write(feed)
-rows = "".join(f"<li><b>{html.escape(e['title'])}</b><br><audio controls preload='none' src='audio/{e['file']}'></audio></li>" for e in eps)
+rows = "".join(f"<li><b>{html.escape(e['title'])}</b><br><audio controls preload='none' src='{AUDIO}/{e['file']}'></audio></li>" for e in eps if 'duration' in e)
 open("docs/index.html", "w", encoding="utf-8").write(f"""<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>學生會長是前世的勇者｜有聲書</title><style>body{{font-family:sans-serif;max-width:720px;margin:auto;padding:16px;background:#111;color:#eee}}img{{width:100%;max-width:360px}}li{{margin:14px 0}}audio{{width:100%}}a{{color:#f66}}</style>
 <img src="img/cover.jpg"><h1>學生會長是前世的勇者｜有聲書</h1><p>{html.escape(desc)}</p><p>RSS：<a href="feed.xml">{BASE}/feed.xml</a></p><ol>{rows}</ol>""")
