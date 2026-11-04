@@ -19,8 +19,14 @@ KT = f"{SRC}/titles.json"  # final chapter titles as published on KadoKado (pref
 KTITLES = json.load(open(KT, encoding="utf-8")) if os.path.exists(KT) else {}
 eps = json.load(open("episodes.json", encoding="utf-8")) if os.path.exists("episodes.json") else []
 have = {e["file"] for e in eps}
+MAX_NEW = int(os.environ.get("MAX_NEW", "12"))  # cap per run so the hourly cron pushes in small batches
+made = 0
+def save():  # atomic write: a crash mid-dump must not leave an empty episodes.json
+    json.dump(sorted(eps, key=lambda e: (e["season"], e["n"])), open("episodes.json.tmp", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    os.replace("episodes.json.tmp", "episodes.json")
 base = datetime(2026, 11, 3, 12, tzinfo=timezone(timedelta(hours=8)))
 for txt in sorted(glob.glob(f"{SRC}/ch[0-9][0-9][0-9].txt")):
+    if made >= MAX_NEW: break
     n = int(re.search(r"ch(\d+)\.txt", txt).group(1))
     if KTITLES and str(n) not in KTITLES:
         continue  # still being written: titles.json gets the title only once the volume is done
@@ -41,10 +47,10 @@ for txt in sorted(glob.glob(f"{SRC}/ch[0-9][0-9][0-9].txt")):
     if not os.path.exists(mp3):
         subprocess.run([sys.executable, "-u", "tools/tts.py", txt, mp3,
                         f"學生會長是前世的勇者。{title.replace('　', '，')}。", f"第{cn(n)}章，完。感謝收聽學生會長是前世的勇者。"], check=True)
+        made += 1
     if f not in have:
         eps.append({"n": n, "season": season, "file": f, **meta,
                     "pub": format_datetime(base + timedelta(minutes=n))})
         have.add(f)
-    json.dump(sorted(eps, key=lambda e: e["n"]), open("episodes.json", "w", encoding="utf-8"),
-              ensure_ascii=False, indent=1)
+    save()
     print("done", f, flush=True)
